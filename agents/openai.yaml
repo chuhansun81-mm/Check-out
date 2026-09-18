@@ -1,0 +1,5 @@
+interface:
+  display_name: "AT 收银台运营后台设计"
+  short_description: "生成并评审收银台模板、商户配置与复核后台页面"
+  brand_color: "#1E75FF"
+  default_prompt: "Use $checkout-operations-admin-design to design, review, or update an AT checkout operations admin workflow."
