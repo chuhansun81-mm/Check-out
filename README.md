@@ -2,7 +2,7 @@
 
 一套面向 AT 收银台运营后台的 Codex Skill，用于把产品需求、页面截图或现有 Figma 稿转化为一致、可复核、可实现的后台页面与交互。
 
-默认采用品牌蓝 `#1E75FF`、中文字体 `PingFang SC`，并遵循 Arco Design 的输入、反馈与后台交互习惯。
+默认采用品牌蓝 `#1E75FF` 和跨平台系统字体栈：macOS 中文优先苹方，Windows 中文优先微软雅黑，并遵循 Arco Design 的输入、反馈与后台交互习惯。
 
 ## 适用场景
 
@@ -136,11 +136,13 @@ Check-out/
 ## 设计基线
 
 - 主色：`#1E75FF`
-- 中文字体：`PingFang SC`
+- Web/HTML 字体栈：`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif`
+- macOS 中文优先：`PingFang SC`（苹方）
+- Windows 中文优先：`Microsoft YaHei`（微软雅黑）
+- Figma 不支持系统字体栈自动切换：macOS 设计环境优先苹方，Windows 设计环境优先微软雅黑
 - 组件交互：参考 Arco Design 后台产品习惯
 - 页面风格：清晰、克制、可扫描，优先保证复杂配置场景的信息可读性
 
 ## 许可证与使用范围
 
 该仓库用于共享 AT 收银台运营后台的设计方法和 Codex 工作流。使用前请确认业务文档、品牌资产和页面数据符合所在团队的权限与合规要求。
-
