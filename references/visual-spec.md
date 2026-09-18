@@ -6,7 +6,16 @@
 - 主文字 `#1D2129`；次文字 `#4E5969`；辅助文字 `#86909C`。
 - 边框 `#C9CDD4`；分割线 `#E5E8EF`。
 - 成功 `#00B42A`；警告 `#FF7D00`；危险 `#F53F3F`。
-- 中文字体优先 `PingFang SC`；不可用时回退到现有中文字体，不用 Inter 替换中文。
+- Web/HTML 统一使用以下系统字体栈：
+
+  ```css
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  ```
+
+- macOS 优先使用系统字体，并以 `PingFang SC`（苹方）承载中文；Windows 优先使用 `Segoe UI`，中文回退到 `Microsoft YaHei`（微软雅黑）。
+- `Hiragino Sans GB` 作为旧版 macOS 中文回退字体；其他环境最终回退到 `sans-serif`。
+- 不使用 Inter、Arial 等西文字体强制替换中文，不下载或打包系统字体。
+- 字重优先使用 400、500、600；避免使用当前平台字体不支持的字重导致浏览器伪粗体。
 
 ## 页面骨架
 
@@ -30,4 +39,3 @@
 - 长文案设置合理列宽、换行或省略提示，不得与相邻列粘连。
 - 详情卡片分割线必须与内容宽度一致。
 - 小号灰字需确保可读性，不使用过浅颜色承载关键信息。
-
